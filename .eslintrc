@@ -1,0 +1,28 @@
+{
+  "root": true,
+  "plugins": [
+      "eslint-plugin"
+  ],
+  "extends": [
+      "eslint:recommended",
+      "plugin:eslint-plugin/recommended"
+  ],
+  "env": {
+      "node": true,
+      "es6": true
+  },
+  "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 6,
+      "jsx": true
+  },
+  "settings": {
+      "import/resolver": {
+          "node": {
+              "paths": [
+                  "src"
+              ]
+          }
+      }
+  }
+}

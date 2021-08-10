@@ -1,0 +1,20 @@
+# Logs
+logs/
+*.log
+
+# Cache
+.eslintcache
+.idea
+.npm
+.yarnclean
+
+# Directories
+_book/
+coverage/
+esm/
+lib/
+node_modules/
+
+# Custom
+*.min.js
+*.map

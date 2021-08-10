@@ -1,0 +1,54 @@
+{
+  "name": "eslint-plugin-no-deprecated-variable",
+  "version": "1.0.0",
+  "description": "An eslint plugin that helps you disallowing usage of deprecated variable by suggesting the matching one",
+  "keywords": [
+    "eslint",
+    "frichti",
+    "plugin",
+    "javascript",
+    "babel"
+  ],
+  "scripts": {
+    "prebuild": "rimraf lib",
+    "build": "babel --quiet --out-dir lib src",
+    "test": "jest",
+    "test:lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frichti/eslint-plugin-no-deprecated-variable.git"
+  },
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "author": "Axel Mohamed Sadat",
+  "license": "MIT",
+  "engines": {
+    "node": ">=4"
+  },
+  "bugs": {
+    "url": "https://github.com/frichti/eslint-plugin-no-deprecated-variable/issues"
+  },
+  "homepage": "https://github.com/frichti/eslint-plugin-no-deprecated-variable#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/eslint-parser": "^7.14.3",
+    "@babel/parser": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-typescript": "^7.13.0",
+    "@typescript-eslint/parser": "^4.25.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.27.0",
+    "eslint-plugin-eslint-plugin": "^3.0.3",
+    "jest": "^27.0.1",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.2.4"
+  },
+  "peerDependencies": {
+    "eslint": "^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0"
+  }
+}
